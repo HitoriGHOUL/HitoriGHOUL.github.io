@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<head>
+
+<title>Youtube Link Video Player</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="body device">
+
+    <div class="whitetext nav">
+        <nav>
+                <a href="index.html"><button class="navbutton" action="videoplayer.html">Home</button></a>
+                <a href="videoplayer.html"><button class="navbutton">Utilities</button></a>
+        </nav>
+        <hr>
+    </div>
+
+    <div class="div">
+
+        <form id="frm1">
+
+            <text style="color: white;">Enter URL:</text>
+            <input id="vname" type="text" class="form">
+            <button class="button" type="button" onclick="videoChange()">Change Video</button>
+
+        </form>
+
+    </div>
+
+    <div class = "div">
+
+    <iframe id="video" src="https://www.youtube.com/embed/EWDv4g0RFos" allow="fullscreen" class="video"></iframe>
+
+    </div>
+
+</body>
+
+<script>
+
+    function getId(url) {
+        const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+        const match = url.match(regExp);
+
+        return (match && match[2].length === 11)
+        ? match[2]
+        : null;
+    }
+
+    function videoChange() {
+        var x = document.getElementById("vname");
+            document.getElementById("video").src = "https://www.youtube.com/embed/" + getId(String(x.value))
+    }
+
+    document.getElementById("frm1").onkeypress = function(e) {
+    var key = e.charCode || e.keyCode || 0;     
+    if (key == 13) {
+        e.preventDefault();
+    }
+    }
+ 
+</script>
+
+<style>
+
+    
+
+.div{
+    text-align: center;
+    padding: 25px;
+}
+
+.body{
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.form{
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    border:2px solid white;
+}
+
+.video{
+    width: 90%;
+    text-align: center;
+    background-color: black;
+    border-color: black;
+    border: 10px;
+    color:black;
+    margin: auto;
+    height:700px;
+}
+
+.button{
+    border: 2px solid white;
+    background-color: black;
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width : 320px) {
+    .device {overflow: scroll;}
+}
+
+
+</style>
+
+</html>

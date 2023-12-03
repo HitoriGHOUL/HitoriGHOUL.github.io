@@ -1,0 +1,55 @@
+.nav{
+    background-color: black;
+}
+
+.navbutton{
+    border: 2px solid white;
+    background-color: black;
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.whitetext{
+    color:white;
+}
+
+.center{
+    text-align: center;
+}
+
+.background1{
+    background-color: black;
+}
+
+.body{
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 1px;
+  }
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: black
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: black;
+}
+
+.header{
+    margin-top: 5%;
+    font-size: 25;
+}
