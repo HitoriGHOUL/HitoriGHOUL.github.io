@@ -5,6 +5,7 @@
 <title>Youtube Link Video Player</title>
 <link rel="stylesheet" href="style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="scripts.js"></script>
 
 </head>
 
@@ -40,7 +41,7 @@
 
 <footer>
     <div class="dropdown">
-    <button class="dropbtn">☰</button>
+    <button class="dropbtn" onclick="toggleMobileButton()">O</button>
     <div class="dropdown-content">
       <a href="index.html">Home</a>
       <a href="utilities.html">Utilities</a>
@@ -101,20 +102,17 @@
 
 @media (min-width: 501px){
 
-.video{
-    width: 90%;
-    text-align: center;
-    background-color: black;
-    border-color: black;
-    border: 10px;
-    color:black;
-    margin: auto;
-    height:700px;
+    .video{
+        width: 90%;
+        text-align: center;
+        background-color: black;
+        border-color: black;
+        border: 10px;
+        color:black;
+        margin: auto;
+        height:700px;
+    }
 }
-
-
-}
-
 
 @media (max-width: 500px) {
     /* video player stuff */
