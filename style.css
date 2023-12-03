@@ -61,7 +61,7 @@
 
 /* mobile stuff */
 
-    @media screen and (min-width: 481px){
+    @media (min-width: 481px){
         .dropdown{
             display: none;
         }
@@ -70,7 +70,7 @@
         }
     }
 
-    @media screen and (max-width: 480px) {
+    @media (max-width: 480px) {
 
         .nav{
             display: none;
