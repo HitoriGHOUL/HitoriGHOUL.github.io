@@ -1,40 +1,30 @@
 <!DOCTYPE html>
 
 <head>
-
-<title>Youtube Link Video Player</title>
-<link rel="stylesheet" href="style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="scripts.js"></script>
-
+    <title>Youtube Link Video Player</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts.js"></script>
 </head>
 
-<body class="background1 body device">
+<body class="body">
 
-    <div class="whitetext nav">
-        <nav>
-                <a href="index.html"><button class="navbutton">Home</button></a>
-                <a href="utilities.html"><button class="navbutton">Utilities</button></a>
-        </nav>
-        <hr>
+    <div class="nav">
+        <a href="index.html"><button class="navbutton" action="videoplayer.html">Home</button></a></li>
+        <a href="utilities.html"><button class="navbutton">Utilities</button></a></li>
+        <a href="about.html"><button class="navbutton" style="float: right;">About</button></a>
     </div>
 
     <div class="div">
-
         <form id="frm1">
-
             <text style="color: white;">Enter URL:</text>
             <input id="vname" type="text" class="form">
             <button class="button" type="button" onclick="videoChange()">Change Video</button>
-
         </form>
-
     </div>
 
     <div class = "div">
-
-    <iframe id="video" src="https://www.youtube.com/embed/EWDv4g0RFos" allow="fullscreen" class="video"></iframe>
-
+        <iframe id="video" src="https://www.youtube.com/embed/EWDv4g0RFos" allow="fullscreen" class="video"></iframe>
     </div>
 
 </body>
@@ -83,7 +73,7 @@
 
 .form{
     text-align: center;
-    background-color: black;
+    background-color: transparent;
     color: white;
     width: 50%;
     margin: auto;
@@ -93,11 +83,14 @@
 
 .button{
     border: 2px solid white;
-    background-color: black;
+    background-color: transparent;
     color: black;
     padding: 10px;
     cursor: pointer;
     color: white;
+}
+.button:hover{
+    color:#79A2F2;
 }
 
 @media (min-width: 501px){

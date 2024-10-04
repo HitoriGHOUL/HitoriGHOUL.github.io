@@ -1,76 +1,82 @@
     
 /* normal stuff */
 
-    .header1{
-        font-size: 45px;
-    }
-
-    .header2{
-        font-size: 35px;
-    }
-
     .body{
         font-size: 25px;
+        background-image: url("./images/lapis2.png"); 
+        background-color: black; 
+        height: 500px; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        /* no highlighting website */
+        -webkit-user-select: none; 
+        -ms-user-select: none; 
+        user-select: none;*
     }
 
-    .nav{
-        background-color: black;
+    .flex-container{
+        display: flex;
+        align-items: flex-end;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        padding: 0.5%;
+        margin: 0.1%;
     }
 
     .navbutton{
-        border: 2px solid white;
-        background-color: black;
-        color: black;
-        padding: 10px;
-        cursor: pointer;
+        border: 0px;
         color: white;
-        font-size: 15px;
+        padding: 15px;
+        cursor: pointer;
+        font-size: 25px;
+        background-color: transparent;
     }
 
-    .whitetext{
+    .navbutton:hover{
+        color: #79A2F2;
+    }
+
+    .introduction{
         color:white;
-    }
-
-    .center{
+        margin: 10%;
         text-align: center;
     }
 
-    .background1{
-        background-color: black;
+    .about{
+        color:white;
+        margin: 10%;
+        text-align: center;
     }
 
-/* no highlighting website */
-    .body{
-        -webkit-user-select: none; /* Safari */
-        -ms-user-select: none; /* IE 10 and IE 11 */
-        user-select: none; /* Standard syntax */
+    .utilities-h{
+        color:white;
+        margin: 10%;
+        text-align: center;
     }
 
-/* no scroll wheel */
-
-    /* width */
-    ::-webkit-scrollbar {
-        width: 1px;
+    .utilities{
+        color:white;
+        text-align: left;
+        margin: 10%;
+        margin-top: -5%;
     }
     
-    /* Track */
-    ::-webkit-scrollbar-track {
-        background: black
+    .utility-button{
+        border: 1px;
+        border-color: white;
+        color: white;
+        padding: 15px;
+        cursor: pointer;
+        font-size: 25px;
+        background-color: transparent;
     }
 
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
-        background: black;
+    .utility-button:hover{
+        color:#79A2F2
     }
 
-    /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
-        background: black;
-    }
-
-    .header{
-        margin-top: 5%;
-    }
 
 /* mobile stuff */
 
@@ -83,6 +89,7 @@
         }
         .nav{
             display: block;
+            margin: 1%;
         }
 
     }
@@ -139,11 +146,25 @@
             /* Change the background color of the dropdown button when the dropdown content is shown */
             /* .dropdown:hover .dropbtn {background-color: white; color: black;} */
 
+    }
+/* no scroll wheel */
 
-        /* utilities stuff */
-        .navbutton{
-            font-size: 30;
+        /* width */
+        ::-webkit-scrollbar {
+            width: 1px;
+        }
+        
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: black
         }
 
-        
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: black;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: black;
         }
