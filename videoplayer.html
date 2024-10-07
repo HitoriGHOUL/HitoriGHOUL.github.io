@@ -9,22 +9,34 @@
 
 <body class="body">
 
-    <div class="nav">
-        <a href="index.html"><button class="navbutton" action="videoplayer.html">Home</button></a></li>
-        <a href="utilities.html"><button class="navbutton">Utilities</button></a></li>
-        <a href="about.html"><button class="navbutton" style="float: right;">About</button></a>
-    </div>
+    <div class="frame">
 
-    <div class="div">
-        <form id="frm1">
-            <text style="color: white;">Enter URL:</text>
-            <input id="vname" type="text" class="form">
-            <button class="button" type="button" onclick="videoChange()">Change Video</button>
-        </form>
-    </div>
+        <div class="nav">
+            <img src="./images/fancyline.png">
+            <div class="nav-name">Alain Chau</div>
+            <div><a href="/index.html"><button class="navbutton" action="videoplayer.html">Home</button></a></div>
+            <div><a href="/music.html"><button class="navbutton">Music</button></a></div>
+            <div><a href="/utilities.html"><button class="navbutton">Utilities</button></a></div>
+            <div><a href="/other.html"><button class="navbutton">Other</button></a></div>
+            <div><a href="/socials.html"><button class="navbutton">Socials</button></a></div>
+          </div>
 
-    <div class = "div">
-        <iframe id="video" src="https://www.youtube.com/embed/EWDv4g0RFos" allow="fullscreen" class="video"></iframe>
+
+        <div class="right">
+            <div class="div">
+                <form id="frm1">
+                    <text style="color: white;">Enter URL:</text>
+                    <input id="vname" type="text" class="form">
+                    <button class="button" type="button" onclick="videoChange()">Change Video</button>
+                </form>
+            </div>
+
+            <div class = "div">
+                <iframe id="video" src="https://www.youtube.com/embed/EWDv4g0RFos" allow="fullscreen" class="video"></iframe>
+            </div>
+        </div>
+
+
     </div>
 
 </body>
@@ -34,7 +46,10 @@
     <button class="dropbtn" onclick="toggleMobileButton()">O</button>
     <div class="dropdown-content">
       <a href="index.html">Home</a>
+      <a href="music.html">Music</a>
       <a href="utilities.html">Utilities</a>
+      <a href="other.html">Other</a>
+      <a href="socials.html">Socials</a>
     </div>
   </div>
 </footer>

@@ -1,11 +1,14 @@
+    @import url("https://fonts.googleapis.com/css?family=Sofia|Oswald|Raleway|Fjalla One");
     
-/* normal stuff */
+    /* normal stuff */  
+    html{
+        overflow: hidden;
+    }
 
     .body{
         font-size: 25px;
-        background-image: url("./images/lapis2.png"); 
-        background-color: black; 
-        height: 500px; 
+        background-color: black;
+        background-image: url("./images/lapis2.png");  
         background-position: center; 
         background-repeat: no-repeat; 
         background-size: cover; 
@@ -13,16 +16,32 @@
         -webkit-user-select: none; 
         -ms-user-select: none; 
         user-select: none;
+        height: 100%;
     }
 
-    .flex-container{
+    .nav-name{
+        font-size: 60px;
+        color:white;
+        margin-bottom: 10px;
+        font-family: sofia;
+    }
+
+    .frame{
         display: flex;
-        align-items: flex-end;
-        flex-direction: row;
-        justify-content: left;
+        width:100%;
+        height:100%;
+        background-color: transparent;
         align-items: center;
-        padding: 0.5%;
-        margin: 0.1%;
+        justify-content: center;
+        align-self: center;
+        height: 100%;
+        height: 100vh; /* Full viewport height */
+    }
+
+
+    .utility-description{
+        font-family: raleway;
+        font-size: 20px;
     }
 
     .navbutton{
@@ -30,8 +49,20 @@
         color: white;
         padding: 15px;
         cursor: pointer;
-        font-size: 25px;
+        font-size: 20px;
         background-color: transparent;
+        font-family: Oswald;
+        transition: color 0.2s;
+    }
+
+    .current-tab{
+        color: white;
+        padding: 15px;
+        cursor: pointer;
+        font-size: 20px;
+        background-color: transparent;
+        font-family: Oswald;
+        transition: color 0.2s;
     }
 
     .navbutton:hover{
@@ -40,27 +71,19 @@
 
     .introduction{
         color:white;
-        margin: 10%;
-        text-align: center;
+        margin: 5%;
+        font-family:raleway;
     }
 
-    .about{
+    .other{
         color:white;
-        margin: 10%;
-        text-align: center;
-    }
-
-    .utilities-h{
-        color:white;
-        margin: 10%;
-        text-align: center;
+        margin: 5%;
     }
 
     .utilities{
         color:white;
-        text-align: left;
-        margin: 10%;
-        margin-top: -5%;
+        margin: 5%;
+        font-family: Fjalla One;
     }
     
     .utility-button{
@@ -71,11 +94,34 @@
         cursor: pointer;
         font-size: 25px;
         background-color: transparent;
+        font-family: Fjalla One;
     }
 
     .utility-button:hover{
         color:#79A2F2
     }
+
+    .socials{
+        display:flex;
+        color:white;
+        margin:5%;
+        font-family: Fjalla One;
+        flex-direction: column;
+    } 
+
+    .music{
+        color:white;
+        margin: 5%;
+        font-family:raleway;
+    }
+
+    /* @keyframes color-change {
+        0%{color: white;}
+        25%{color: #79A2F2;}
+        50%{color: #235FD9;}
+        75%{color: #79A2F2;}
+        100%{color: white;}
+    } */
 
 
 /* mobile stuff */
@@ -87,9 +133,28 @@
         .dropdown{
             display: none;
         }
-        .nav{
-            display: block;
-            margin: 1%;
+        .nav {
+            display: flex;
+            flex-direction: column; 
+            padding: 0.5%;
+            margin: 3%;
+            align-items: left;
+            text-align: center;
+            background-color: transparent;
+            width: 30%;
+        }
+
+        .right{
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            height: 90%;
+            text-align: right;
+            border: white;
+            border-style: solid;
+            border-width: 3px;
+            margin: 2%;
+            overflow: auto;
         }
 
     }
@@ -98,6 +163,8 @@
 
         .nav{
             display: none;
+            border-color: white;
+            border-width: 1px;
         }
 
         /* mobile menu */
@@ -144,27 +211,41 @@
             .dropdown-content a:hover {background-color: #ddd;}
 
             /* Change the background color of the dropdown button when the dropdown content is shown */
-            /* .dropdown:hover .dropbtn {background-color: white; color: black;} */
+            .dropdown:hover .dropbtn {background-color: white; color: black;}
+
+            .right{
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                height: 90%;
+                text-align: right;
+                overflow: auto;
+            }
+
 
     }
 /* no scroll wheel */
 
-    /* width */
-    ::-webkit-scrollbar {
-        width: 1px;
-    }
+        /* width */
+        ::-webkit-scrollbar {
+            width: 1px;
+        }
+        
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: black
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: black;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: black;
+        }    
+
     
-    /* Track */
-    ::-webkit-scrollbar-track {
-        background: black
-    }
 
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
-        background: black;
-    }
-
-    /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
-        background: black;
-    }
+   
